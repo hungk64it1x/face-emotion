@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+*{
+	font-family: 'Montserrat', sans-serif;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.enjoy-css {
+	display: inline-block;
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+	cursor: pointer;
+	padding: 10px 20px;
+	border: 1px solid #018dc4;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	font: normal 16px/normal "Times New Roman", Times, serif;
+	color: red;
+	-o-text-overflow: clip;
+	text-overflow: clip;
+	background: url("https://enjoycss.com/bg-img/custom/29707-k7p9ay.fjrz.png"), #0199d9;
+	background-position: 48% 50%;
+	-webkit-background-origin: border-box;
+	background-origin: border-box;
+	-webkit-background-clip: padding-box;
+	background-clip: padding-box;
+	-webkit-background-size: cover;
+	background-size: cover;
+	-webkit-box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.2) ;
+	box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.2) ;
+	text-shadow: -1px -1px 0 rgba(15,73,168,0.66) ;
+	-webkit-transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
+	-moz-transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
+	-o-transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
+	transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  }
+
+  .wrapper {
+	
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+	width: 600px;
+	height: 600px;
+	position: relative;
+	top: -100px;
+	left: 190px;
+	margin: 150px;
+	padding: 21px;
+	overflow: hidden;
+	border: none;
+	font: normal 16px/1 "Times New Roman", Times, serif;
+	color: rgba(255,255,255,1);
+	text-align: center;
+	-o-text-overflow: ellipsis;
+	text-overflow: ellipsis;
+	-webkit-box-shadow: 3px 3px 18px 3px rgba(0,150,255,0.91) ;
+	box-shadow: 3px 3px 18px 3px rgba(0,150,255,0.91) ;
+  }
+
+  .submit{
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+	position: relative;
+	top: 8px;
+	left: 190px;
+	width: 100px;
+	height: 30px;
+	cursor: pointer;
+	margin: 0 auto;
+	border: 2px solid rgb(30,205,151);
+	-webkit-border-radius: 40px;
+	border-radius: 40px;
+	font: normal 22px/30px "Advent Pro", Helvetica, sans-serif;
+	color: rgb(30, 205, 151);
+	text-align: center;
+	-o-text-overflow: clip;
+	text-overflow: clip;
+	visibility: hidden;
+	letter-spacing: 1px;
+	background: rgba(0,0,0,0);
+	-webkit-transition: background-color 0.3s cubic-bezier(0, 0, 0, 0), color 0.3s cubic-bezier(0, 0, 0, 0), width 0.3s cubic-bezier(0, 0, 0, 0), border-width 0.3s cubic-bezier(0, 0, 0, 0), border-color 0.3s cubic-bezier(0, 0, 0, 0);
+	-moz-transition: background-color 0.3s cubic-bezier(0, 0, 0, 0), color 0.3s cubic-bezier(0, 0, 0, 0), width 0.3s cubic-bezier(0, 0, 0, 0), border-width 0.3s cubic-bezier(0, 0, 0, 0), border-color 0.3s cubic-bezier(0, 0, 0, 0);
+	-o-transition: background-color 0.3s cubic-bezier(0, 0, 0, 0), color 0.3s cubic-bezier(0, 0, 0, 0), width 0.3s cubic-bezier(0, 0, 0, 0), border-width 0.3s cubic-bezier(0, 0, 0, 0), border-color 0.3s cubic-bezier(0, 0, 0, 0);
+	transition: background-color 0.3s cubic-bezier(0, 0, 0, 0), color 0.3s cubic-bezier(0, 0, 0, 0), width 0.3s cubic-bezier(0, 0, 0, 0), border-width 0.3s cubic-bezier(0, 0, 0, 0), border-color 0.3s cubic-bezier(0, 0, 0, 0);
+  }
+
+  .submit:hover {
+	color: rgba(255,255,255,1);
+	background: rgb(30, 205, 151);
+  }
+  
+  .submit:active {
+	border: 2px solid rgba(33,224,163,1);
+	background: rgba(33,224,163,1);
+	-webkit-transition: none;
+	-moz-transition: none;
+	-o-transition: none;
+	transition: none;
+  }
+ 
+  .file {
+	opacity: 0;
+	width: 0.1px;
+	height: 0.1px;
+	position: absolute;
+  }
+  .file-input label {
+	display: block;
+	position: relative;
+	width: 140px;
+	height: 36px;
+	top: -7px;
+	left: 40px;
+	border-radius: 25px;
+	background: linear-gradient(40deg, #ff6ec4, #7873f5);
+	box-shadow: 0 4px 7px rgba(0, 0, 0, 0.4);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #fff;
+	font-weight: bold;
+	cursor: pointer;
+	transition: transform .2s ease-out;
+  }
+
+  input:hover + label,
+	input:focus + label {
+  transform: scale(1.02);
+}
+
+
+
+  .column1{
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+	position: relative;
+	top: 10px;
+	left: 20px;
+	width: 550px;
+	height: 400px;
+	float: left;
+	border: 2px solid rgba(0,150,255,0.91);
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	font: normal 14px/1 "Times New Roman", Times, serif;
+	color: rgba(0,0,0,1);
+	-o-text-overflow: ellipsis;
+	text-overflow: ellipsis;
+  }
+
+  .column2{
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+	position: relative;
+	top: 30px;
+	right: 30px;
+	width: 170px;
+	height: 170px;
+	float: right;
+	border: 2px solid rgba(0,150,255,0.91);
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	font: normal 14px/1 "Times New Roman", Times, serif;
+	color: rgba(0,0,0,1);
+	-o-text-overflow: ellipsis;
+	text-overflow: ellipsis;
+  }
+
+  #img_url {
+	background: #ddd;
+	width: 550px;
+	height: 400px;
+	display: block;
+	
+  }
+
+
+  .submit_temp{
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+	position: relative;
+	top: 30px;
+	left: 190px;
+	width: 100px;
+	height: 30px;
+	cursor: pointer;
+	margin: 0 auto;
+	border: 2px solid rgb(30,205,151);
+	-webkit-border-radius: 40px;
+	border-radius: 40px;
+	visibility: hidden;
+	font: normal 22px/30px "Advent Pro", Helvetica, sans-serif;
+	color: rgb(30, 205, 151);
+	text-align: center;
+	-o-text-overflow: clip;
+	text-overflow: clip;
+	/* visibility: hidden; */
+	letter-spacing: 1px;
+	background: rgba(0,0,0,0);
+	-webkit-transition: background-color 0.3s cubic-bezier(0, 0, 0, 0), color 0.3s cubic-bezier(0, 0, 0, 0), width 0.3s cubic-bezier(0, 0, 0, 0), border-width 0.3s cubic-bezier(0, 0, 0, 0), border-color 0.3s cubic-bezier(0, 0, 0, 0);
+	-moz-transition: background-color 0.3s cubic-bezier(0, 0, 0, 0), color 0.3s cubic-bezier(0, 0, 0, 0), width 0.3s cubic-bezier(0, 0, 0, 0), border-width 0.3s cubic-bezier(0, 0, 0, 0), border-color 0.3s cubic-bezier(0, 0, 0, 0);
+	-o-transition: background-color 0.3s cubic-bezier(0, 0, 0, 0), color 0.3s cubic-bezier(0, 0, 0, 0), width 0.3s cubic-bezier(0, 0, 0, 0), border-width 0.3s cubic-bezier(0, 0, 0, 0), border-color 0.3s cubic-bezier(0, 0, 0, 0);
+	transition: background-color 0.3s cubic-bezier(0, 0, 0, 0), color 0.3s cubic-bezier(0, 0, 0, 0), width 0.3s cubic-bezier(0, 0, 0, 0), border-width 0.3s cubic-bezier(0, 0, 0, 0), border-color 0.3s cubic-bezier(0, 0, 0, 0);
+  }
+
+  .submit_temp:hover {
+	color: rgba(255,255,255,1);
+	background: rgb(30, 205, 151);
+  }
+  
+  .submit_temp:active {
+	border: 2px solid rgba(33,224,163,1);
+	background: rgba(33,224,163,1);
+	-webkit-transition: none;
+	-moz-transition: none;
+	-o-transition: none;
+	transition: none;
+  }
+
+  .enjoy-css {
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+	width: 150px;
+	height: 100px;
+	border: none;
+	font: normal 16px/1 "Times New Roman", Times, serif;
+	color: rgba(255,255,255,1);
+	text-align: center;
+	-o-text-overflow: ellipsis;
+	text-overflow: ellipsis;
+	-webkit-box-shadow: 3px 3px 18px 3px rgba(0,150,255,0.91) ;
+	box-shadow: 3px 3px 18px 3px rgba(0,150,255,0.91) ;
+  }
+
+  .image{
+	  position: relative;
+	  width: 600px;
+	  height: 600px;
+	  
+  }

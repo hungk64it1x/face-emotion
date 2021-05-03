@@ -1,0 +1,66 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title FER>
+       
+    </title>
+    <link rel="stylesheet" href="../static/css/main.css">
+    <script defer src="face-api-min.js"></script>
+    <script defer src="scripts.js"></script>
+</head>
+
+    <div class="wrapper">
+        <h1 style="color: rebeccapurple;">Nhận diện cảm xúc :></h1>
+
+    <!-- <form action="{{url_for('after')}}" method="POST" enctype="multipart/form-data"> -->
+        
+        
+       <body onload="ShowResult()">
+        <div class="buttons">
+            
+            <div class="file-input">
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+            <form action="{{url_for('after')}}" method="POST" enctype="multipart/form-data">
+                <input type="file" id="file" class="file" name="file1" onChange="ShowImage(this)" ;>
+                <input type="submit" class="submit_temp" onclick="start()">
+                
+
+            </form>
+                <link async href="http://fonts.googleapis.com/css?family=Advent%20Pro" data-generated="http://enjoycss.com" rel="stylesheet" type="text/css"/>
+            
+                <script>
+                     function ShowImage(input){
+                        
+        $('#img_url')[0].src = (window.URL ? URL : webkitURL).createObjectURL(input.files[0]);
+        var x = document.getElementsByClassName("submit_temp")[0]
+                x.setAttribute("style", "visibility: inherit")
+                
+    } 
+                </script>
+                
+
+                <label for="file">Select file</label>
+              </div>
+
+                
+            <!-- <input type="submit" name="btn" class="submit"  id="submit" onclick="ShowResult()" >
+              
+        <link async href="http://fonts.googleapis.com/css?family=Advent%20Pro" data-generated="http://enjoycss.com" rel="stylesheet" type="text/css"/> -->
+        </div>
+    </body>
+        <div class="image">
+            <div class="column1" id="abc">
+                <img src="https://image.pngaaa.com/239/189239-middle.png" id="img_url">
+            </div>
+            <link async href="http://fonts.googleapis.com/css?family=Baumans" data-generated="http://enjoycss.com" rel="stylesheet" type="text/css"/>
+           
+        </div>
+        
+        
+
+    </form>
+    
+    
+</div>
+
+</html>
