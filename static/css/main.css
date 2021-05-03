@@ -144,7 +144,7 @@
 	top: 10px;
 	left: 20px;
 	width: 550px;
-	height: 400px;
+	height: 490px;
 	float: left;
 	border: 2px solid rgba(0,150,255,0.91);
 	-webkit-border-radius: 10px;
@@ -177,7 +177,7 @@
   #img_url {
 	background: #ddd;
 	width: 550px;
-	height: 400px;
+	height: 490px;
 	display: block;
 	
   }

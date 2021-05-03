@@ -6,8 +6,8 @@ from tensorflow.keras.models import load_model
 import numpy as np
 
 
-TEMPLATE_DIR = os.path.abspath('../Flask/templates')
-STATIC_DIR = os.path.abspath('../Flask/static')
+TEMPLATE_DIR = os.path.abspath('../face-emotion/templates')
+STATIC_DIR = os.path.abspath('../face-emotion/static')
 
 sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
 app = Flask(__name__, template_folder=TEMPLATE_DIR, static_folder=STATIC_DIR)
@@ -19,8 +19,8 @@ def home():
 @app.route('/', methods=['POST'])
 def after():
     img = request.files['file1']
-    path = os.path.abspath('../Flask/static/css/images/file.jpg')
-    weight_path = os.path.abspath('../Flask/model_weights.h5')
+    path = os.path.abspath('../face-emotion/static/css/images/file.jpg')
+    weight_path = os.path.abspath('../face-emotion/model_weights.h5')
     # path = r'D:\Microsoft VS Code\python\Flask\anh-stt-vui.jpg'
     img.save(path)
 
@@ -30,7 +30,7 @@ def after():
     gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
     
     cascade = cv2.CascadeClassifier('model.xml')
-    faces = cascade.detectMultiScale(gray, 1.1, 2)
+    faces = cascade.detectMultiScale(gray, 1.1, 3)
     
     model = load_model(weight_path)
     
