@@ -4,16 +4,14 @@ import os.path
 import cv2
 from tensorflow.keras.models import load_model
 import numpy as np
-from werkzeug.utils import secure_filename
+
 
 TEMPLATE_DIR = os.path.abspath('../Flask/templates')
 STATIC_DIR = os.path.abspath('../Flask/static')
 
 sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
 app = Flask(__name__, template_folder=TEMPLATE_DIR, static_folder=STATIC_DIR)
-ALLOWED_EXTENSIONS = set(['png', 'jpg', 'jpeg', 'gif'])
-def allowed_file(filename):
-	return '.' in filename and filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
+
 @app.route('/')
 def home():
     return render_template('index.html')
